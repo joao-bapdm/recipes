@@ -1,0 +1,27 @@
+################################################################################
+#                             Find tips                                        #
+################################################################################
+# Find all the files in the home directory
+find ~
+# Find all the directories in the home directory
+find ~ -type d
+# Find all  reg. files with JPG extension which are also bigger than 1M in $HOME
+find $HOME -type f -name "*.JPG" -size +1M
+# Find files and directories with bad permissions in $HOME
+find ~ \( -type f -not -perm 0600 \) -or \( -type d -not -perm 0700 \)
+# Find foo files
+find ~ -type f -name 'foo*' -exec ls -l '{}' ';'        # slowly
+find ~ -type f -name 'foo*' -exec ls -l '{}' +          # efficiently
+find ~ -type f -name 'foo*' -print | xargs ls -l        # traditionally
+# Find jpg's with funny names by using the null character as argument separator
+find ~ -iname '*.jpg' -print0 | xargs --null ls -l
+Playground directory with 100 subdirectories, 26 empty files in each one
+mkdir -p playground/dir-{001..100}
+touch playground/dir-{001..100}/file-{A..Z}
+# Find files and directories with bad permissions in playground and change it
+find playground \( -type f -not -perm 0600 -exec chmod 0600 '{}' ';' \) -or \( -type d -not -perm 0700 -exec chmod 0700 '{}' ';' \)
+################################################################################
+#                            rclone tips                                       #
+################################################################################
+# Copy files following a pattern and showing transfer progress
+rclone copy --include 'pattern' --progress source:path dest:path

@@ -1,0 +1,12 @@
+%%%%%%%%%% Building the document %%%%%%%%%%
+
+\section*{Building}
+
+The easiest way to build the document is using the latexmk command. In case
+the \texttt{minted} package is used (as in this document), the syntax is as
+follows: \mint{bash}|latexmk -shell-escape -pdf main.tex|
+otherwise the \texttt{shell-escape} option can be dropped. This command will
+call \texttt{latex}, \texttt{bib}, and whatever else is necessary as many
+times as needed. Clean up can be performed calling a script such as
+\texttt{cleanup\_tex.sh}:
+\inputminted[bgcolor=lightgray]{bash}{cleanup_tex.sh}

@@ -1,0 +1,28 @@
+% Styling definition
+\ProvidesPackage{mystyle}
+
+% use Unicode for input encoding
+\usepackage[utf8]{inputenc}
+% and T1 for font encoding
+\usepackage[T1]{fontenc}
+% Portuguese specific (maybe not)
+% \usepackage[portuguese]{babel}
+% Use smaller margins
+\usepackage[a4paper, margin=1in]{geometry}
+% math packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{commath}  % for \norm and \dif $
+\usepackage{mathtools} % for \coloneqq
+% import external graphics
+\usepackage{graphicx}
+% allow figure tables
+\usepackage{subcaption}
+% format and highlight source code
+\usepackage{minted}
+% needed for minted to work properly
+\usepackage{xcolor}
+% modern bibliography manager
+\usepackage{biblatex}
+\addbibresource{references.bib}

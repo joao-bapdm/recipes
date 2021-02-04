@@ -1,0 +1,22 @@
+%%%%%%%%%% how to git %%%%%%%%%%
+\documentclass[10pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{minted}
+
+\begin{document}
+
+\section*{Set up}
+
+Begin a new repo by doing: \mint{bash}|git init|
+Configure your identity for this repo:
+\mint{bash}|git config --local user.name "John Doe"|
+\mint{bash}|git config --local user.email johndoe@mail.co|
+Add the remote:
+\mint{bash}|git remote add <shortmane> <url>|
+Push stuff to it:
+\mint{bash}|git push --set-upstream <shortname> <branch>|
+Done!
+
+\end{document}

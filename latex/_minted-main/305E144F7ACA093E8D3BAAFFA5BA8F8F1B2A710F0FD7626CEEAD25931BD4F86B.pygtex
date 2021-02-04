@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+ch}{\PYGZsh{}!/bin/bash}
+rm \PYGZhy{}\PYGZhy{}force *\PYG{o}{\PYGZob{}}aux,log,bbl,blg,bcf,xml,fls,fdb\PYGZus{}latexmk\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

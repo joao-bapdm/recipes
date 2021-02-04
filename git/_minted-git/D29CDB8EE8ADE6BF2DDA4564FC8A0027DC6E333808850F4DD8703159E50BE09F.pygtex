@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+git remote add \PYGZlt{}shortmane\PYGZgt{} \PYGZlt{}url\PYGZgt{}
+\end{Verbatim}

@@ -1,0 +1,30 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{} Styling definition}
+\PYG{k}{\PYGZbs{}ProvidesPackage}\PYG{n+nb}{\PYGZob{}}mystyle\PYG{n+nb}{\PYGZcb{}}
+
+\PYG{c}{\PYGZpc{} use Unicode for input encoding}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[utf8]}\PYG{n+nb}{\PYGZob{}}inputenc\PYG{n+nb}{\PYGZcb{}}
+\PYG{c}{\PYGZpc{} and T1 for font encoding}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[T1]}\PYG{n+nb}{\PYGZob{}}fontenc\PYG{n+nb}{\PYGZcb{}}
+\PYG{c}{\PYGZpc{} Portuguese specific (maybe not)}
+\PYG{c}{\PYGZpc{} \PYGZbs{}usepackage[portuguese]\PYGZob{}babel\PYGZcb{}}
+\PYG{c}{\PYGZpc{} Use smaller margins}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+na}{[a4paper, margin=1in]}\PYG{n+nb}{\PYGZob{}}geometry\PYG{n+nb}{\PYGZcb{}}
+\PYG{c}{\PYGZpc{} math packages}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}amsmath\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}amsfonts\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}amssymb\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}commath\PYG{n+nb}{\PYGZcb{}}  \PYG{c}{\PYGZpc{} for \PYGZbs{}norm and \PYGZbs{}dif \PYGZdl{}}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}mathtools\PYG{n+nb}{\PYGZcb{}} \PYG{c}{\PYGZpc{} for \PYGZbs{}coloneqq}
+\PYG{c}{\PYGZpc{} import external graphics}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}graphicx\PYG{n+nb}{\PYGZcb{}}
+\PYG{c}{\PYGZpc{} allow figure tables}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}subcaption\PYG{n+nb}{\PYGZcb{}}
+\PYG{c}{\PYGZpc{} format and highlight source code}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}minted\PYG{n+nb}{\PYGZcb{}}
+\PYG{c}{\PYGZpc{} needed for minted to work properly}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}xcolor\PYG{n+nb}{\PYGZcb{}}
+\PYG{c}{\PYGZpc{} modern bibliography manager}
+\PYG{k}{\PYGZbs{}usepackage}\PYG{n+nb}{\PYGZob{}}biblatex\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}addbibresource}\PYG{n+nb}{\PYGZob{}}references.bib\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}

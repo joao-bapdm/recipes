@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+latexmk \PYGZhy{}shell\PYGZhy{}escape \PYGZhy{}pdf main.tex
+\end{Verbatim}

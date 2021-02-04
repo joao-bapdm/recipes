@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{} Basic setup \PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}\PYGZpc{}}
+
+\PYG{k}{\PYGZbs{}section*}\PYG{n+nb}{\PYGZob{}}Structure\PYG{n+nb}{\PYGZcb{}}
+
+Changes are much easier if the construction of the document is structured.
+Create a directory named \PYG{k}{\PYGZbs{}texttt}\PYG{n+nb}{\PYGZob{}}img/\PYG{n+nb}{\PYGZcb{}} to store images and another one named
+\PYG{k}{\PYGZbs{}texttt}\PYG{n+nb}{\PYGZob{}}tex/\PYG{n+nb}{\PYGZcb{}} to store the tex files themselves.
+
+Have a \PYG{k}{\PYGZbs{}texttt}\PYG{n+nb}{\PYGZob{}}main.tex\PYG{n+nb}{\PYGZcb{}} defining the type of file, title and packages.
+This file also calls the tex files from \PYG{k}{\PYGZbs{}texttt}\PYG{n+nb}{\PYGZob{}}tex/\PYG{n+nb}{\PYGZcb{}}, as well as printing
+the bibliography. An example follows:
+
+\PYG{k}{\PYGZbs{}inputminted}
+[
+linenos
+]
+\PYG{n+nb}{\PYGZob{}}latex\PYG{n+nb}{\PYGZcb{}}
+\PYG{n+nb}{\PYGZob{}}tex/basic.tex\PYG{n+nb}{\PYGZcb{}}
+\end{Verbatim}
